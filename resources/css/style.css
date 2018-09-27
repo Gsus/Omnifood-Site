@@ -175,13 +175,13 @@ header {
 	margin-top: 55px;
 }
 
-.main-nav>li {
+.main-nav li {
 	display: inline-block;
 	margin-left: 40px;
 }
 
-.main-nav>li>a:link,
-.main-nav>li>a:visited {
+.main-nav li a:link,
+.main-nav li a:visited {
 	padding: 8px 0;
 	text-decoration: none;
 	color: #fff;
@@ -191,7 +191,31 @@ header {
 	transition: border-bottom 0.2s;
 }
 
-.main-nav>li>a:hover,
-.main-nav>li>a:active {
+.main-nav li a:hover,
+.main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
+}
+
+/*	Meals	*/
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%;
+	/*It has 100% of its parent element, which is the previous one: 25%.*/
+	margin: 0;
+}
+
+.meal-photo img {
+	width: 100%;
+	height: auto;
 }
